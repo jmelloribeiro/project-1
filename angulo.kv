@@ -1,0 +1,243 @@
+<ang>:
+    orientation: 'vertical'
+    padding: (20,20)
+    spacing: 0
+
+    BoxLayout:
+        Label:
+            text:'AJUSTE DE ÂNGULO'
+
+    BoxLayout:
+        spacing: 0
+        elevation: 1
+        orientation: 'horizontal'
+        
+        Label:
+            text: 'ÂNG. DE PROJ.'
+            canvas.before:
+                Color:
+                    rgba: 153, 217, 234, 1
+                Line:
+                    width: 0.5
+                    rectangle: self.x, self.y, self.width, self.height
+        
+
+        Label:
+            text: 'CAIXA 01\n2,50°'
+            halign:'center'
+            canvas.before:
+                Color:
+                    rgba: 153, 217, 234, 1
+                Line:
+                    width: 0.5
+                    rectangle: self.x, self.y, self.width, self.height
+        
+        Label:
+            text: 'CAIXA 02\n2,83°'
+            halign:'center'
+            canvas.before:
+                Color:
+                    rgba: 153, 217, 234, 1
+                Line:
+                    width: 0.5
+                    rectangle: self.x, self.y, self.width, self.height
+                    
+        Label:
+            text: 'CAIXA 03\n3,17'
+            halign:'center'
+            canvas.before:
+                Color:
+                    rgba: 153, 217, 234, 1
+                Line:
+                    width: 0.5
+                    rectangle: self.x, self.y, self.width, self.height
+        
+        Label:
+            text: 'CAIXA 04\n3,50'
+            halign:'center'
+            canvas.before:
+                Color:
+                    rgba: 153, 217, 234, 1
+                Line:
+                    width: 0.5
+                    rectangle: self.x, self.y, self.width, self.height
+
+    BoxLayout:
+        canvas.before:
+            Color:
+                rgba: 153, 217, 234, 1
+            Line:
+                width: 0.5
+                rectangle: self.x, self.y, self.width, self.height  
+        
+        Label:
+            text: 'ÂNG. GEIV'
+            canvas.before:
+                Color:
+                    rgba: 153, 217, 234, 1
+                Line:
+                    width: 0.5
+                    rectangle: self.x, self.y, self.width, self.height  
+            
+        TextInput:
+            id: geiv_1
+            multiline: False
+            input_filter: 'float'
+
+        TextInput:
+            id: geiv_2
+            multiline: False
+            input_filter: 'float'
+
+        TextInput:
+            id: geiv_3
+            multiline: False
+            input_filter: 'float'
+        
+        TextInput:
+            id: geiv_4
+            multiline: False
+            input_filter: 'float'
+    
+    BoxLayout:
+        orientation: 'horizontal'
+        
+        Label:
+            text: 'DIFERENÇA'
+            canvas.before:
+                Color:
+                    rgba: 153, 217, 234, 1
+                Line:
+                    width: 0.5
+                    rectangle: self.x, self.y, self.width, self.height
+        
+
+        Label:
+            id: dif_cx1
+            canvas.before:
+                Color:
+                    rgba: 153, 217, 234, 1
+                Line:
+                    width: 0.5
+                    rectangle: self.x, self.y, self.width, self.height
+        
+        Label:
+            id: dif_cx2
+            canvas.before:
+                Color:
+                    rgba: 153, 217, 234, 1
+                Line:
+                    width: 0.5
+                    rectangle: self.x, self.y, self.width, self.height
+                    
+        Label:
+            id: dif_cx3
+            canvas.before:
+                Color:
+                    rgba: 153, 217, 234, 1
+                Line:
+                    width: 0.5
+                    rectangle: self.x, self.y, self.width, self.height
+        
+        Label:
+            id: dif_cx4
+            canvas.before:
+                Color:
+                    rgba: 153, 217, 234, 1
+                Line:
+                    width: 0.5
+                    rectangle: self.x, self.y, self.width, self.height  
+
+    BoxLayout:
+        canvas.before:
+            Color:
+                rgba: 153, 217, 234, 1
+            Line:
+                width: 0.5
+                rectangle: self.x, self.y, self.width, self.height  
+    
+        Label:
+            text: 'INCLINÔMETRO'
+            canvas.before:
+                Color:
+                    rgba: 153, 217, 234, 1
+                Line:
+                    width: 0.5
+                    rectangle: self.x, self.y, self.width, self.height  
+            
+        TextInput:
+            id: i_cx1
+            multiline: False
+            input_filter: 'float'
+
+        TextInput:
+            id: i_cx2
+            multiline: False
+            input_filter: 'float'
+
+        TextInput:
+            id: i_cx3
+            multiline: False
+            input_filter: 'float'
+        
+        TextInput:
+            id: i_cx4
+            multiline: False
+            input_filter: 'float'
+    
+    BoxLayout:
+
+        orientation: 'horizontal'
+        
+        Label:
+            text: 'ÂNG. AJUSTADO'
+            canvas.before:
+                Color:
+                    rgba: 153, 217, 234, 1
+                Line:
+                    width: 0.5
+                    rectangle: self.x, self.y, self.width, self.height
+        
+
+        Label:
+            id: ajuste_cx1
+            canvas.before:
+                Color:
+                    rgba: 153, 217, 234, 1
+                Line:
+                    width: 0.5
+                    rectangle: self.x, self.y, self.width, self.height
+        
+        Label:
+            id: ajuste_cx2
+            canvas.before:
+                Color:
+                    rgba: 153, 217, 234, 1
+                Line:
+                    width: 0.5
+                    rectangle: self.x, self.y, self.width, self.height
+                    
+        Label:
+            id: ajuste_cx3
+            canvas.before:
+                Color:
+                    rgba: 153, 217, 234, 1
+                Line:
+                    width: 0.5
+                    rectangle: self.x, self.y, self.width, self.height
+        
+        Label:
+            id: ajuste_cx4
+            canvas.before:
+                Color:
+                    rgba: 153, 217, 234, 1
+                Line:
+                    width: 0.5
+                    rectangle: self.x, self.y, self.width, self.height  
+    
+    Button:
+        text: 'CALCULAR'
+        on_release: root.calc()
+
+
+
